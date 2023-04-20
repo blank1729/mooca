@@ -1,12 +1,15 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import Header from "@/components/Header";
+import Courses from "@/components/courses";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main>
-      <h1>Mooca</h1>
-    </main>
-  )
+    <>
+      <Header />
+      <Courses />
+    </>
+  );
 }
