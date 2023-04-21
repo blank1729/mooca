@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker": "docker run -e PORT=3000 -p 3000:3000 -v $(pwd):/app mooca-frontend:v2"
   },
   "dependencies": {
     "@types/node": "18.15.11",
